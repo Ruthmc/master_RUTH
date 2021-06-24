@@ -12,6 +12,13 @@ view: order_items {
   dimension: amount {
     type: number
     sql: ${TABLE}."AMOUNT" ;;
+    link: {
+      label: "CLICK ME"
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+    }
+    drill_fields: [id, orders.id]
+
   }
 
   dimension: order_id {
